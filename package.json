@@ -1,0 +1,22 @@
+{
+  "name": "web_automation",
+  "version": "1.0.0",
+  "description": "studying web automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyozpada/web_automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyozpada/web_automation/issues"
+  },
+  "homepage": "https://github.com/gyozpada/web_automation#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.7.1"
+  }
+}
