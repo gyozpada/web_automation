@@ -11,6 +11,10 @@ async function example(){
         setInterval(function(){
             driver.quit();
         }, 10000);
+
+        setInterval(function(){
+            driver.quit();
+        }, 10000);
 };
 
 example();
