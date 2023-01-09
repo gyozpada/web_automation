@@ -18,9 +18,9 @@ async function test_case(){
     //Test#1
     //if the tittle isn't correct,it will failed
     if(await driver.getTitle() === "GitHub: Let’s build from here · GitHub"){
-        console.log("Test #1 Success")
+        console.log("Test #1 \x1b[32mPass")
     } else {
-        console.log("Test #1 Failed");
+        console.log("Test #1 \x1b[31Failed");
     }
 
     //input a username and passwordlet a1 = driver.actions();
