@@ -7,8 +7,11 @@ async function scrape(){
     
     await driver.get("http://ratings.fide.com/rankings.phtml");
 
-    var names = driver.getElements(By.css(".tur"));
+    var names = driver.findElements(By.css(".tur"));
 
+    for( let n of names){
+        console.log(await n.getText());
+    }
 
     driver.quit();
 }
