@@ -45,7 +45,6 @@ async function test_case(){
         return result
     }
 
-
     //Test#2
     //if the corrected elemet isn't displayed, it will failed
     // if(await driver.findElement(By.className("flash-close js-flash-close")).isDisplayed()){
