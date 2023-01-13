@@ -14,5 +14,5 @@ async function scrape(){
     }
 
     driver.quit();
-    //i will continue to this but tomorrow i guess , hehe
+    //again
 }
