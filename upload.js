@@ -14,3 +14,5 @@ async function upload(){
     driver.quit();
 
 }
+
+upload();
