@@ -1,10 +1,11 @@
 const { Builder, Key, By } = require("selenium-webdriver")
+require('chromedriver')
 
-async function scrape(){
+async function scrapeYoutube(){
 
     let driver = await new Builder().forBrowser('chrome').build();
 
-    await driver.get('https://www.youtube.com/@The_FirstTake');
+    await driver.get('https://www.youtube.com/@The_FirstTake/featured');
 
     var link = await driver.findElements(By.tagName("a"))
 
@@ -12,8 +13,10 @@ async function scrape(){
         console.log(await link.getText());
     }
 
-    var line = await driver.findElement(By.partialLinkText("nobodyknows+"));
+    var line = await driver.findElement(By.partialLinkText("YOASOBI"));
     console.log(await line.getText());
     driver.quit();
 
 }
+
+scrapeYoutube();
